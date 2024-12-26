@@ -1,0 +1,14 @@
+.header {
+  &__top {
+    padding: 13px 0;
+    color: #fff;
+    background-color: #323941;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

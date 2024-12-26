@@ -1,0 +1,20 @@
+.cart {
+  &__btn {
+    position: relative;
+  }
+
+  &__counter {
+    font-size: 10px;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    background-color: #009eff;
+    border-radius: 100%;
+    width: 12px;
+    height: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+}

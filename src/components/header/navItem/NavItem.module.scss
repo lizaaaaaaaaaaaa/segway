@@ -1,0 +1,15 @@
+.nav {
+  &__item {
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  &__link {
+    transition: 0.3s;
+
+    &:hover {
+      color: #009eff;
+      transition: 0.3s;
+    }
+  }
+}
