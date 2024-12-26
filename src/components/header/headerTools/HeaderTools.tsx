@@ -9,6 +9,7 @@ const HeaderTools = () => {
       <Cart />
       <a
         href="https://www.instagram.com/segway/?locale=ru&hl=am-et"
+        target="_blank"
         className={styles.header__insta}
       >
         <img src={instagramIcon} alt="instagram" />
