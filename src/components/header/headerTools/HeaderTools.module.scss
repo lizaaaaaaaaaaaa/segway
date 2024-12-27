@@ -2,4 +2,9 @@
   display: flex;
   gap: 0 24px;
   align-items: center;
+
+  @media screen and (max-width: 940px) {
+    width: 100%;
+    justify-content: center;
+  }
 }

@@ -10,5 +10,17 @@
     gap: 0 10px;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 940px) {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px 0;
+    }
+  }
+
+  .nav {
+    @media screen and (max-width: 940px) {
+      width: 100%;
+    }
   }
 }
