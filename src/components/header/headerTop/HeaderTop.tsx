@@ -3,6 +3,7 @@ import NavList from "../navList/NavList";
 import styles from "./HeaderTop.module.scss";
 import HeaderTools from "../headerTools/HeaderTools";
 import HeaderMenu from "../headerMenu/HeaderMenu";
+import Logo from "../logo/Logo";
 
 const HeaderTop: FC = () => {
   const [isNavShow, setIsNavShow] = useState<boolean>(false);
@@ -13,10 +14,14 @@ const HeaderTop: FC = () => {
   return (
     <section className={styles.header__top}>
       <div className={`container ${styles.header__inner}`}>
-        <HeaderMenu navVisibility={isNavShow} changeNavVisibility={changeNavVisibility} />
+        <HeaderMenu
+          navVisibility={isNavShow}
+          changeNavVisibility={changeNavVisibility}
+        />
         <nav className={styles.nav}>
           <NavList navVisibility={isNavShow} />
         </nav>
+        <Logo className={styles.logo} />
         <HeaderTools />
       </div>
     </section>

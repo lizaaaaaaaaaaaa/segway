@@ -19,6 +19,12 @@
     left: 16px;
   }
 
+  @media screen and (max-width: 375px) {
+    font-size: 16px;
+    gap: 16px 0;
+    padding: 24px 14px;
+  }
+
   &-mobile {
     transform: translateY(-200%);
     transition: 0.3s;
@@ -51,7 +57,7 @@
   80% {
     transform: translateY(50px);
   }
-  
+
   100% {
     transform: translateY(45px);
   }

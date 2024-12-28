@@ -1,6 +1,10 @@
 .cart {
   &__btn {
     position: relative;
+
+    & > picture > img {
+      vertical-align: middle;
+    }
   }
 
   &__counter {
