@@ -1,11 +1,18 @@
-import React from "react";
+import React, { FC } from "react";
 import HeaderMenuItem from "./headerMenuItem/HeaderMenuItem";
+import styles from "./HeaderMenu.module.scss";
 
-type Props = {};
+type Props = {
+  changeNavVisibility: () => void;
+  navVisibility: boolean;
+};
 
-const HeaderMenu: React.FC<Props> = () => {
+const HeaderMenu: FC<Props> = ({ changeNavVisibility, navVisibility }) => {
   return (
-    <button>
+    <button
+      className={`${styles.menu} ${navVisibility ? styles["menu-active"] : ""}`}
+      onClick={changeNavVisibility}
+    >
       <HeaderMenuItem />
       <HeaderMenuItem />
       <HeaderMenuItem />

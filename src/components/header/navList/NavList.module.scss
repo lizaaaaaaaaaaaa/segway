@@ -16,7 +16,43 @@
     color: #fff;
     border-radius: 8px;
     z-index: 3;
-    top: 70px;
     left: 16px;
+  }
+
+  &-mobile {
+    transform: translateY(-200%);
+    transition: 0.3s;
+  }
+
+  &-active {
+    transform: translateY(45px);
+    animation: navBounce 0.3s linear 1;
+    transition: 0.3s;
+  }
+}
+
+@keyframes navBounce {
+  0% {
+    transform: translateY(-200%);
+  }
+
+  20% {
+    transform: translateY(35px);
+  }
+
+  40% {
+    transform: translateY(55px);
+  }
+
+  60% {
+    transform: translateY(40px);
+  }
+
+  80% {
+    transform: translateY(50px);
+  }
+  
+  100% {
+    transform: translateY(45px);
   }
 }

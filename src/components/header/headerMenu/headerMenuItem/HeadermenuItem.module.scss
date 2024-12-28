@@ -1,0 +1,10 @@
+.menu {
+  &__picture {
+    display: block;
+    max-height: 3px;
+
+    & > img {
+      vertical-align: top;
+    }
+  }
+}
