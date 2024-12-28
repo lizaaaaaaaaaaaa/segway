@@ -11,6 +11,11 @@
       object-fit: cover;
       object-position: center;
       border-radius: 100%;
+
+      @media screen and (max-width: 600px) {
+        width: 53px;
+        height: 53px;
+      }
     }
   }
 

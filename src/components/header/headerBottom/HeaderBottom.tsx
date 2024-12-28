@@ -7,7 +7,7 @@ const HeaderBottom = () => {
   return (
     <section className={styles.header__bottom}>
       <div className={`container ${styles.header__inner}`}>
-        <Logo />
+        <Logo className={styles.logo} />
         <HeaderDirector />
       </div>
     </section>
